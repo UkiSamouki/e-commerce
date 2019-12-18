@@ -4,6 +4,7 @@ import { Route, Switch, Router } from "react-router-dom";
 import { createBrowserHistory } from "history";
 
 import HomePage from "./pages/homepage/homepage.component";
+import ShopPage from "./pages/shop/shop.component";
 
 const HatsPage = () => (
   <div>
@@ -18,7 +19,7 @@ function App() {
       <Router history={hist}>
         <Switch>
           <Route exact path="/" component={HomePage} />
-          <Route path="/hats" component={HatsPage} />
+          <Route path="/shop" component={ShopPage} />
         </Switch>
       </Router>
     </div>
